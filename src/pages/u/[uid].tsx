@@ -11,7 +11,6 @@ import {
   Text,
   Button
 } from "@chakra-ui/core";
-import { GetRecipes } from "../../client/components/GetRecipes/GetRecipes.component";
 
 const USER_QUERY = gql`
   query User($userId: ID!) {
@@ -79,8 +78,6 @@ return (
           </Box>
         </Box>
         <Box w="500px" maxW="100%" mt={4}>
-          {/* <UserRecipes /> */}
-          <GetRecipes {...filter} />
         </Box>
       </>
     )}

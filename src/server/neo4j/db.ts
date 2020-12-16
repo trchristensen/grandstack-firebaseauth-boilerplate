@@ -9,10 +9,10 @@ import neo4j from "neo4j-driver";
 // };
 
 export const DEFAULT_NEO4J_DESKTOP = {
-  URI: "bolt://52.23.177.159:43232",
+  URI: "bolt://54.237.45.29:32834",
   USER: "neo4j",
-  PASSWORD: "wiggle-ditches-parts",
-  isEncrypted: false
+  PASSWORD: "drunkeness-yard-tumbles",
+  isEncrypted: false,
 };
 
 

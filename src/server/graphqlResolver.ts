@@ -1,10 +1,6 @@
 // import { MutationResolvers, QueryResolvers, Resolvers } from "./gen/index";
-
-import { RecipeMutations, RecipeQueries } from './resolvers/Recipes.resolvers';
-import { UserMutations } from './resolvers/Users.resolvers';
-import { LikesQueries, LikesMutations } from "./resolvers/Likes.resolvers";
+import { UserMutations } from "./resolvers/Users.resolvers";
 type Context = { idToken: { uid: string } | null };
-
 
 const CurrentUser: any = {
   //@ts-ignore
@@ -15,22 +11,13 @@ const CurrentUser: any = {
   },
 };
 
-
 const Query = {
   ...CurrentUser,
-  ...RecipeQueries,
-  ...LikesQueries,
 };
 
-const Mutation = {
-  ...UserMutations,
-  ...RecipeMutations,
-  ...LikesMutations
-}
-
+const Mutation = {};
 
 export const resolvers: any = {
   Query,
   Mutation,
-  
 };
