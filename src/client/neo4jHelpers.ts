@@ -13,18 +13,21 @@ export async function neo4jVerifyUser(user: any) {
     .then((result: any) => {
       if (result.records.length === 0) {
         return session.run(
-          "CREATE (u:User {id: $id, userId: $userId, name: $name, isAdmin: false, isPremium: false, avatar: $avatar})",
+          "CREATE (u:User {id: $id, userId: $userId, name: $name, email: $email, isAdmin: false, isPremium: false, avatar: $avatar})",
           {
             id: user.userId,
             userId: user.userId,
             name: user.name,
+            email: user.email,
             avatar: user.avatar || null
           }
         ).then((result) => {
-          console.log('records', result.records)
+          console.log('new record created:', result.records)
+          return result.records;
         });
       } else {
-        return console.log(result.records[0]);
+        console.log('user exists in db')
+        return result.records[0]
       }
     })
     .catch((err) => console.log(err));

@@ -1,9 +1,10 @@
 {
-  "apiKey": "AIzaSyCDNh88hYQQd4EnZtVxsZVP6hSchKti2qQ",
-  "authDomain": "juice-sauce.firebaseapp.com",
-  "databaseURL": "https://juice-sauce.firebaseio.com",
-  "projectId": "juice-sauce",
-  "storageBucket": "juice-sauce.appspot.com",
-  "messagingSenderId": "7638110266",
-  "appId": "1:7638110266:web:f3cb22ddd2da1ede05a503"
-}
+    "apiKey": "AIzaSyBKFT_uMEwZqtEbr-MFXedkcpVOmOIv3L4",
+    "authDomain": "barangay-63.firebaseapp.com",
+    "databaseURL": "https://barangay-63.firebaseio.com",
+    "projectId": "barangay-63",
+    "storageBucket": "barangay-63.appspot.com",
+    "messagingSenderId": "657619664265",
+    "appId": "1:657619664265:web:4038a9c13e856c388cb558",
+    "measurementId": "G-1RQYRZ8Q9V"
+  }

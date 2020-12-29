@@ -21,6 +21,7 @@ const Index = () => {
 
   return (
     <main>
+      Home
     </main>
   );
 };

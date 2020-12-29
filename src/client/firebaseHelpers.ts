@@ -54,6 +54,7 @@ export async function loginWithGithub() {
     }
 
     neo4jVerifyUser(userObject);
+
   } catch (error) {
     console.error("login failed", error);
   }
@@ -70,6 +71,26 @@ export async function loginWithGoogle() {
       avatar: user.user?.photoURL,
       name: user.user?.displayName,
     };
+
+    neo4jVerifyUser(userObject);
+  } catch (error) {
+    console.error("login failed", error);
+  }
+}
+
+export async function loginWithFacebook() {
+  const provider = new firebase.auth.FacebookAuthProvider();
+
+  try {
+    const user = await firebase.auth().signInWithPopup(provider);
+    const userObject: IUserObject = {
+      userId: user.user?.uid,
+      email: user.user?.email,
+      avatar: user.user?.photoURL,
+      name: user.user?.displayName,
+    };
+
+    console.log('facebook user object', user)
 
     neo4jVerifyUser(userObject);
   } catch (error) {

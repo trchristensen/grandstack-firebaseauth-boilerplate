@@ -3,7 +3,7 @@ import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { getAuth } from "../../client/firebaseHelpers";
-import BackBar from "../../client/components/BackBar/BackBar.component";
+import BackBar from "../../client/components/TopBar/TopBar.component";
 
 import {
   Avatar,

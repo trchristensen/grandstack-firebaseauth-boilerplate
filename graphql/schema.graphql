@@ -10,11 +10,9 @@ type User {
 
 type Query {
   currentUser: User
-
   userCount: Int! @cypher(statement: "MATCH (u:User) RETURN COUNT(u)")
-
 }
 
-type Mutation {
+# type Mutation {
  
-}
+# }

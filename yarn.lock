@@ -1392,6 +1392,14 @@
     "@chakra-ui/icon" "1.0.1"
     "@chakra-ui/utils" "1.0.1"
 
+"@chakra-ui/close-button@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/close-button/-/close-button-1.0.2.tgz#a4eb9db17c28e6e4e88bd537270dca153a79e2e1"
+  integrity sha512-nC3a80+ugI7r7f/mQSfQSCtBGJdSr3hhavIQIvLrqQx4xUe1nC4fAihlASTgI0EmVaubE7IIYPHUFpGnZ56MXw==
+  dependencies:
+    "@chakra-ui/icon" "1.0.1"
+    "@chakra-ui/utils" "1.0.1"
+
 "@chakra-ui/color-mode@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@chakra-ui/color-mode/-/color-mode-1.0.1.tgz#c6ef751be5cf057fe534850cbacac02760250821"
@@ -1448,6 +1456,14 @@
   integrity sha512-1Pkud18gYGtRGobdMNRhWEg4GTQiZUs38dMEktLynTR0F8Cjwqw12ncWCKfhxaXp0XTkWM21cwcB6QDQtFaH9Q==
   dependencies:
     "@chakra-ui/hooks" "1.0.1"
+
+"@chakra-ui/drawer@^1.0.0-next.3":
+  version "1.0.0-next.3"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/drawer/-/drawer-1.0.0-next.3.tgz#f45eb49470ccf1f6aee31e29b775a0dbf317c500"
+  integrity sha512-6Wk96zSDxL6DCWLQTlNeO7ToQue664o3kty390ovwWATpSEkxRcVlbZNDX/bst2p5CBwy/sh1tc1Pv+TQAwO1Q==
+  dependencies:
+    "@chakra-ui/modal" "^1.0.0-next.3"
+    "@chakra-ui/transition" "^1.0.0-next.3"
 
 "@chakra-ui/editable@1.0.1":
   version "1.0.1"
@@ -1566,6 +1582,20 @@
     "@chakra-ui/hooks" "1.0.1"
     "@chakra-ui/portal" "1.0.1"
     "@chakra-ui/transition" "1.0.1"
+    "@chakra-ui/utils" "1.0.1"
+    aria-hidden "^1.1.1"
+    react-remove-scroll "2.4.0"
+
+"@chakra-ui/modal@^1.0.0-next.3":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/modal/-/modal-1.2.1.tgz#891801792201d7aa88f810720faabdcf32f62eec"
+  integrity sha512-PHn3ULSeg+Fo9wvbZ77Z5qVYZBJL4X0FeeMBjXVkkfQ6z5f2D9c2nNShMuF8dxkXcfBy3OIAIsexAbheUXgfkQ==
+  dependencies:
+    "@chakra-ui/close-button" "1.0.2"
+    "@chakra-ui/focus-lock" "1.0.1"
+    "@chakra-ui/hooks" "1.0.1"
+    "@chakra-ui/portal" "1.0.1"
+    "@chakra-ui/transition" "1.0.2"
     "@chakra-ui/utils" "1.0.1"
     aria-hidden "^1.1.1"
     react-remove-scroll "2.4.0"
@@ -1827,6 +1857,14 @@
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@chakra-ui/transition/-/transition-1.0.1.tgz#ff7107e38d16f939686a8f24e5e61a1a85dc1acc"
   integrity sha512-BkDoViy17aEkMXOYN5CEl7RMhTH4NEhaKOyUX1PVghJBTyov8hpBuIbc/c80b+I/iK/ftHrP+RcLSEeu84W/bg==
+  dependencies:
+    "@chakra-ui/hooks" "1.0.1"
+    "@chakra-ui/utils" "1.0.1"
+
+"@chakra-ui/transition@1.0.2", "@chakra-ui/transition@^1.0.0-next.3":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/transition/-/transition-1.0.2.tgz#569b491da5de15f8956688b694681fbc44b622b9"
+  integrity sha512-sbgQbe8ayKRi7PdV7vYvgGlO01epU7a95yFPBn7By9Q2cusNWZrCxw/rymD5BnDQlDr5xg5FhWh88wvJQSMzwA==
   dependencies:
     "@chakra-ui/hooks" "1.0.1"
     "@chakra-ui/utils" "1.0.1"

@@ -1,10 +1,10 @@
 module.exports = {
   env: {
-    APP_NAME: "App Name",
+    APP_NAME: "Barangay",
     BASEPATH: "http://localhost:3000",
-    NEO4J_URI: "bolt://54.237.45.29:32834",
+    NEO4J_URI: "bolt://54.90.54.66:38317",
     NEO4J_USER: "neo4j",
-    NEO4J_PASSWORD: "drunkeness-yard-tumbles",
+    NEO4J_PASSWORD: "volts-proposes-finger",
   },
   webpack: (config) => {
     config.module.rules.push({
